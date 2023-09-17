@@ -1,0 +1,145 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  /* background:linear-gradient(135deg, rgb(211, 198, 200), rgb(159, 159, 192),rgb(151, 183, 194)); */
+  background-image: url("images/background-mountains-landscape_23-2148267131.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+main{
+    min-height : 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.background-clip{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;    
+}
+
+.search{
+    margin-top: 5rem;
+    width: 25rem;
+    height: 4rem;
+    background:transparent;
+    display: flex;
+    border: none;
+    border-radius: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search input{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #fff;
+    font-weight: 500 ;
+}
+.search ::placeholder{
+    color: #b8acac;
+}
+
+.search button{
+    position: relative;
+    top: 0;
+    right: .5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.error-msg p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: none;
+    }
+
+.weather{
+    width: 100%;
+    text-align: center;
+    
+}
+.weather h1{
+    font-size: 3.5rem;
+}
+
+img{
+    
+    aspect-ratio: 3/2;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.details{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.details-1{
+    padding: 2rem;
+    border: none;
+    border-radius: .7rem; 
+}
+.details-1 p{
+    font-size: 1.34rem;
+    font-weight: 400;
+}
+
+.riseset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.riseset div{
+    background: rgba(0, 0, 0, .3);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.riseset div img{
+    height: 8rem;
+}
+.riseset div p{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+@media (width<500px){
+    .search{
+        margin-top: 1rem;
+    }
+}
