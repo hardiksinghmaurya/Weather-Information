@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Information</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/clear.png" type="image/x-icon">
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body>
-    <main>
-      <div class="search">
-        <input type="text" placeholder="city name" />
-        <button><ion-icon name="search-sharp"></ion-icon></button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Information</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/clear.png" type="image/x-icon">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <main>
+
+
+
+
+    <div class="search">
+      <input type="text" placeholder="city name" />
+      <button><ion-icon name="search-sharp"></ion-icon></button>
+    </div>
+    <div class="error-msg">
+      <div class="container">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
-      <div class="error-msg">
-        <p>Invalid Name</p>
-      </div>
-      <div class="weather">
-        <img src="images/clear.png" class="w-icon" />
-        <h1>--</h1>
-        <h2>--</h2>
-        <div class="details">
-          <div class="details-1">
-            <img src="images/thermostat.png" alt="" />
-            <p class="feelslike">--</p>
-            <p>Feels like</p>
-          </div>
-          <div class="details-1">
-            <img src="images/humidity.jpg" alt="" />
-            <p class="humidity">--</p>
-            <p>Humidity</p>
-          </div>
-          <div class="details-1">
-            <img src="images/wind.png" alt="" />
-            <p class="windspeed">--</p>
-            <p>Wind Speed</p>
-          </div>
-          <div class="details-1">
-            <img src="images/eye.png" alt="" />
-            <p class="visibility">--</p>
-            <p>Visibility</p>
-          </div>
+      <p>Invalid Name</p>
+    </div>
+    <div class="weather">
+      <img src="images/clear.png" class="w-icon" />
+      <h1>--</h1>
+      <h2>--</h2>
+      <div class="details">
+        <div class="details-1">
+          <img src="images/thermostat.png" alt="" />
+          <p class="feelslike">--</p>
+          <p>Feels like</p>
         </div>
-        <div class="riseset">
-          <div>
-            <img src="images/sunrise.png" alt="">
-            <p>Sunrise</p>
-            <p class="sunrise">--</p>
-          </div>
-          <div>
-            <img src="images/sunset.png" alt="">
-            <p>Sunset</p>
-            <p class="sunset">--</p>
-          </div>
+        <div class="details-1">
+          <img src="images/humidity.jpg" alt="" />
+          <p class="humidity">--</p>
+          <p>Humidity</p>
+        </div>
+        <div class="details-1">
+          <img src="images/wind.png" alt="" />
+          <p class="windspeed">--</p>
+          <p>Wind Speed</p>
+        </div>
+        <div class="details-1">
+          <img src="images/eye.png" alt="" />
+          <p class="visibility">--</p>
+          <p>Visibility</p>
         </div>
       </div>
-    </main>
-    <script type="module" src="script.js"></script>
-  </body>
+      <div class="riseset">
+        <div>
+          <img src="images/sunrise.png" alt="">
+          <p>Sunrise</p>
+          <p class="sunrise">--</p>
+        </div>
+        <div>
+          <img src="images/sunset.png" alt="">
+          <p>Sunset</p>
+          <p class="sunset">--</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>
